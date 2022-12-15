@@ -39,7 +39,7 @@ partnerRouter.route('/:partnerId')
         res.end(`POST operation not supported on /partner/${req.params.partnerId}`);
     })
     .put((req, res) => {
-        res.end(`Will update the partner: ${req.body.name}
+        res.end(`Updating the partner: ${req.params.partnerId} Will update the partner: ${req.body.name}
             with description: ${req.body.description}`);
     })
     .delete((req, res) => {
